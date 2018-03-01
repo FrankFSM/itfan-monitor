@@ -1,0 +1,17 @@
+server:
+  port: 9010
+spring:
+  application:
+    name: itfan-hysrix-turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://ralap:hjx969190@www.itfan01.top:8761/eureka/,http://ralap:hjx969190@www.itfan02.top:8762/eureka/
+  instance:
+    prefer-ip-address: true
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: itfan-kernel,itfan-zuul
+  cluster-name-expression: "'default'"
+  combine-host-port: true

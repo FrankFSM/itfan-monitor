@@ -1,0 +1,15 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: boot-admin
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://ralap:hjx969190@www.itfan01.top:8761/eureka/,http://ralap:hjx969190@www.itfan02.top:8762/eureka/
+management:
+  security:
+    enabled: false

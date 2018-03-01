@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: itfan-zipkin
+server:
+  port: 8901
